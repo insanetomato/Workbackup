@@ -1,0 +1,38 @@
+!SESSION 2014-02-10 02:50:23.097 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_09
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 0 2014-02-10 02:50:25.383
+!MESSAGE 由于未解析以下根约束，所以未解析一个或多个束：
+!SUBENTRY 1 org.eclipse.osgi 2 0 2014-02-10 02:50:25.383
+!MESSAGE 未解析 bundle initial@reference:file:plugins/pms_service_tool_1.0.0.jar/。
+!SUBENTRY 2 pms_service_tool 2 0 2014-02-10 02:50:25.383
+!MESSAGE 缺少主机 Bundle-NativeCode_0.0.0。
+
+!ENTRY org.eclipse.osgi 2 0 2014-02-10 02:50:25.385
+!MESSAGE 以下是未解析的束的完整列表，请参阅上一个日志条目以了解根本原因（如果存在该日志条目的话）：
+!SUBENTRY 1 org.eclipse.osgi 2 0 2014-02-10 02:50:25.385
+!MESSAGE 未解析 bundle pms_service_tool_1.0.0 [59]。
+!SUBENTRY 2 pms_service_tool 2 0 2014-02-10 02:50:25.385
+!MESSAGE 缺少主机 Bundle-NativeCode_0.0.0。
+
+!ENTRY org.eclipse.osgi 4 0 2014-02-10 02:50:25.404
+!MESSAGE 应用程序错误
+!STACK 1
+java.lang.RuntimeException: 应用程序 {0} 在注册器中没有找到. 应用程序可以应用在: org.eclipse.equinox.app.error.
+	at org.eclipse.equinox.internal.app.EclipseAppContainer.startDefaultApp(EclipseAppContainer.java:248)
+	at org.eclipse.equinox.internal.app.MainApplicationLauncher.run(MainApplicationLauncher.java:29)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
